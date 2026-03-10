@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
+@Data
 public class IbChequierId implements Serializable {
     private String numCpt;
     private BigDecimal numDeb;

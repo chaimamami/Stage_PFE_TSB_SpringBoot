@@ -9,6 +9,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class RfMenuId implements Serializable {
     private String menu;
     private String codLan;

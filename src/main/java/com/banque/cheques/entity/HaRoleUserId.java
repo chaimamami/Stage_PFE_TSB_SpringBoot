@@ -12,6 +12,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @EqualsAndHashCode
 @Embeddable
+@Data
 public class HaRoleUserId implements Serializable {
 
     @Column(name = "ORA_UTI", length = 30, nullable = false)

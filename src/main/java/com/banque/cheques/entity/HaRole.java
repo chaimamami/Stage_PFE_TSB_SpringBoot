@@ -11,6 +11,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Builder
 @Entity
+@Data
 @Table(name = "HA_ROLE", schema = "IBANK")
 public class HaRole implements Serializable {
 

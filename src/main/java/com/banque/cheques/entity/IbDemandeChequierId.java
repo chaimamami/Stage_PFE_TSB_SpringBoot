@@ -8,6 +8,7 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 @EqualsAndHashCode
 public class IbDemandeChequierId implements Serializable {
     private String codUg;

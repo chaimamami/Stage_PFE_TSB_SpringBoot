@@ -12,6 +12,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Builder
 @Entity
+@Data
 @Table(name = "RF_MENU", schema = "IBANKT")
 @IdClass(RfMenuId.class)
 public class RfMenu implements Serializable {

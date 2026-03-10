@@ -12,6 +12,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Builder
 @Entity
+@Data
 @Table(name = "HA_ROLE_USER", schema = "IBANK")
 public class HaRoleUser implements Serializable {
 
