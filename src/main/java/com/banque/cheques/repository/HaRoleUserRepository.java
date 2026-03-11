@@ -17,12 +17,11 @@ public interface HaRoleUserRepository extends JpaRepository<HaRoleUser, HaRoleUs
     Optional<HaRoleUser> findFirstById_OraUtiAndDatFinIsNull(String oraUti);
 
     @Query(value = """
-        SELECT ru.role
+        SELECT ru.ROLE
         FROM HA_ROLE_USER ru
-        WHERE ru.ora_uti = :oraUti
-          AND ru.dat_debut <= SYSDATE
-          AND (ru.dat_fin IS NULL OR ru.dat_fin >= SYSDATE)
+        WHERE ru.ORA_UTI = :oraUti
+          AND (ru.DAT_FIN IS NULL OR ru.DAT_FIN >= SYSDATE)
         """, nativeQuery = true)
-    List<String> findActiveRolesByOraUti(@Param("oraUti") String oraUti);
+    List<String> findActiveRoleCodesByOraUti(@Param("oraUti") String oraUti);
 
 }
